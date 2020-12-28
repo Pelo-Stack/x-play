@@ -192,7 +192,7 @@ case 'blocklist':
 					}
 					teks += `Total : ${blocked.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
-					        }
+					        })
     
 
 
@@ -213,7 +213,7 @@ case 'blocklist':
 							}
 					} else {
 						reply('Foto aja mas')
-					}
+					})
 					        
     
 
@@ -227,7 +227,7 @@ case 'stikers':
            exec('cwebp -q 50 ' + image + ' -o temp/' + time + '.webp', (error, stdout, stderr) => {
                let result = fs.readFileSync('temp/' + time + '.webp')
                client.sendMessage(id, result, MessageType.sticker)
-           }
+           })
                    
     
 
@@ -239,7 +239,7 @@ case 'stikers':
        client.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
        client.sendMessage(id, 'Nieh nomer pacarku...Eeh maksudku nomer owner/creator, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
-                   }
+                   })
     
 
 
@@ -248,7 +248,7 @@ case 'stikers':
        client.sendMessage(id, {displayname: "Jeff", vcard2: vcard2}, MessageType.contact)
        client.sendMessage(id, 'Nieh nomer Collab Author aku, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
-                   }
+                   })
     
 
 
@@ -256,7 +256,7 @@ case 'stikers':
            case 'say':
   const teks = text.replace(/say /, "")
 conn.sendMessage(id, teks, MessageType.text)
-                   }
+                   })
     
 
 
@@ -265,7 +265,7 @@ conn.sendMessage(id, teks, MessageType.text)
            case 'loli':
             const loli = await get.get('https://mhankbarbar.herokuapp.com/api/randomloli').json()
             client.sendFileFromUrl(from, loli.result, 'loli.jpeg', 'Cintai Lolimu><', id)
-           }
+           })
 
 
            case 'ytmp3':
@@ -274,7 +274,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/yta?url=${teks}`).then((res) =>
 	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
     let hasil = `âœ…Lagu Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
-      }
+      })
 
 
 case 'igstalk:'
@@ -283,7 +283,7 @@ case 'igstalk:'
   conn.sendMessage(id, '[WAIT] Stalking...â„1¤7', MessageType.text)
   let hasil = `âœ¨Biodata Instagram _${teks}_ \n\n ðŸ§¶ *Username* : _${res.data.Username}_ \n ðŸŒ€ *Nama* : _${res.data.Name}_ \n ðŸŒŸ *Jumlah Followers* : _${res.data.Jumlah_Followers}_ \n ðŸŒ  *Jumlah_Following* : _${res.data.Jumlah_Following}_ \n â­„1¤7 *Jumlah_Post* : _${res.data.Jumlah_Post}_ `;
   conn.sendMessage(id, hasil, MessageType.text);
-      }
+      })
 
 
 case 'ytmp4':
@@ -292,7 +292,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/ytv?url=${teks}`).then((res) =>
 	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
     let hasil = `âœ…Video Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.title}\n\nUkuran video: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
-    }
+    })
 
 
 case 'twt':
@@ -301,7 +301,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88p
 	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
     let hasil = `âœ…Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nKlik link dibawahðŸ—¡ï¸\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
-         }
+         })
 
 
 case 'tiktok':
@@ -310,7 +310,7 @@ axios.get(`https://st4rz.herokuapp.com/api/tiktok?url=${tictoc}`).then((res) => 
 	 conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
      let titoe = `âœ…Berhasil!!! Silahkan klik link dibawah ini untuk mendownload hasilnya! \nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.deskripsi} \n\nDurasi: ${res.data.durasi}\n\nNama: ${res.data.nama}\n\nUrl: ${res.data.urlvideo}`;
 conn.sendMessage(id, titoe, MessageType.text);
-       }
+       })
 
 
 case 'wiki':
@@ -319,7 +319,7 @@ axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
 	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
     let hasil = `ðŸ“Menurut Wikipedia:\n\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
-    }
+    })
 
 
 case 'sholat':
@@ -328,7 +328,7 @@ case 'sholat':
   conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
   let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\nâš¡Imsyak : ${res.data.Imsyak}\nâš¡Subuh : ${res.data.Subuh} WIB\nâš¡Dzuhur : ${res.data.Dzuhur}WIB\nâš¡Ashar : ${res.data.Ashar} WIB\nâš¡Maghrib : ${res.data.Maghrib}\nâš¡Isya : ${res.data.Isya} WIB\nâš¡Tengah malam : ${res.data.Dhuha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
-            }
+            })
 
 
             case 'pict':
@@ -338,10 +338,10 @@ case 'sholat':
                        .then(buffer => {
                            client.sendMessage(id, '[â—] WAIT BOSQðŸ–¤',MessageType.text)
                            client.sendMessage(id, buffer ,MessageType.image)
-                       }
+                       })
                        .catch(err => {
                            console.log(err)
-                       }
+                       })
                    
 
 
@@ -350,16 +350,16 @@ case 'sholat':
                        .then(buffer => {
                            client.sendMessage(id, '[â—] WAIT BOSQðŸ–¤',MessageType.text)
                            client.sendMessage(id, buffer ,MessageType.image)
-                       }
+                       })
                        .catch(err => {
                            console.log(err)
-                       }
+                       })
                    
 
 
                default:
                    client.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok',MessageType.text)
-                   }
+                   })
 
 
       
@@ -369,10 +369,10 @@ case 'sholat':
                .then(buffer => {
                    client.sendMessage(id, '[â—] WAIT BOSQðŸ–¤',MessageType.text)
                    client.sendMessage(id, buffer,MessageType.image)
-               }
+               })
                .catch(err => {
                    console.log(err)
-               }
+               })
            
 
 
@@ -387,7 +387,7 @@ const get = require('got')
     var dirawat = (body[0]['dirawat']);
     console.log(body[0]['name'])
     conn.sendMessage(id,`ðŸ“ŒDATA WABAH COVID-19 TERBARU DI INDONESIA\n\nðŸ“Positif ==> ${positif} \nðŸ“Sembuh ==> ${sembuh} \nðŸ“Meninggal ==> ${meninggal}\nðŸ“Dirawat ==> ${dirawat}`, MessageType.text);
-           }
+           })
 
 
            case 'lirik':
@@ -396,7 +396,7 @@ const get = require('got')
 	     conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
 	 	let hasil = `ðŸ“lirik laguðŸ“${teks} \n\n\n ${res.data.result.lirik}`
 	conn.sendMessage(id, hasil, MessageType.text)
-	   }
+	   })
 
 
 case 'alay':
@@ -404,7 +404,7 @@ case 'alay':
 	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
 		{ let hasil = `${res.data.text}`
 		conn.sendMessage(id, hasil, MessageType.text)
-		}
+		})
 
 
 		
@@ -426,7 +426,7 @@ _${kata}_
     
 	*~${author}*
          `, MessageType.text);
-         }
+         })
 
 
    case 'nama':
@@ -454,7 +454,7 @@ _${kata}_
   ***********************************
 `,
  MessageType.text);
-       }
+       })
 
 
   case 'pasangan':
@@ -481,7 +481,7 @@ _${kata}_
  ${d}
 ************************************
     `, MessageType.text);
-    }
+    })
 
 
     case 'indohot':
@@ -490,10 +490,10 @@ _${kata}_
                    const { judul, genre, durasi, url } = data
                    let hasil = `Tobat GOBLOKðŸ˜™* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
                    client.sendMessage(id, hasil,MessageType.text)
-               }
+               })
                .catch(err => {
                    console.log(err)
-               }
+               })
            
 
 
@@ -513,7 +513,7 @@ _${kata}_
 							if (err) return reply('Gagal om:(')
 							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 							fs.unlinkSync(rano)
-						}
+						})
 					
 					
 
@@ -534,7 +534,7 @@ _${kata}_
 					teks = `*Nama bot* : ${me.name}\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
-					}
+					})
 
 }
 					case 'quran':
@@ -544,7 +544,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     const ket = `${hs}`.replace(sr, '');
     let hasil = `[${ket}]   ${res.data.acak.ar.teks}\n\n${res.data.acak.id.teks}(QS.${res.data.surat.nama}, Ayat ${ket})`;
     conn.sendMessage(id, hasil ,MessageType.text);
-                   }
+                   })
 
 
                    case 'nulis':
@@ -557,7 +557,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
             conn.sendMessage(id, '[ WAIT ] Sedang di proses77 silahkan tunggu sebentar', MessageType.text)
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image)
-                }
+                })
 
 
 

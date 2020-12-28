@@ -16,7 +16,7 @@
 <a href="#"><img title="UNMAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
 </p>
   
-### Nomor My Bot
+## Nomor My Bot
 ```bash
 > wa.me/62895421844942
 
@@ -30,7 +30,7 @@ MAU RE-UPLOAD SCRIPT? KASIH NAMA/LINK CHANEL SAYA.... DILARANG UBAH INFO!!!
 SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA TERMUX
 </div>
 
-### My Github Repository
+## My Github Repository
 ```bash
 > https://github.com/Pelo-Stack/x-play
 ```
@@ -45,6 +45,18 @@ Siapin alat dan bahannya.
 > aplikasi whatsapp
 > aplikasi termux
 > kopi+rokok ;v
+```
+### Cara Pengaktifan
+Siapin Jari Kalian:>
+```bash
+> git clone https://github.com/Pelo-Stack/x-play
+> npm i -g cwebp
+> npm i node-tesseract-ocr
+> npm i -g ytdl
+> npm i
+> npm i got
+> node index.js
+Tinggal Di Scan:>
 ```
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">

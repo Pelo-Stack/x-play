@@ -97,7 +97,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Sayonara @${num.split('@')[0]}👋`
+				teks = `Sayonara @${num.split('@')[0]}ðŸ‘‹`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -132,18 +132,18 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '⌄1�7 Sedang di Prosess ⌄1�7',
-				success: '✔️ Berhasil ✔️',
+				wait: 'âŒ„1¤7 Sedang di Prosess âŒ„1¤7',
+				success: 'âœ”ï¸ Berhasil âœ”ï¸',
 				error: {
-					stick: '❄1�7 Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ❄1�7',
-					Iv: '❄1�7 Link tidak valid ❄1�7'
+					stick: 'â„1¤7 Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker â„1¤7',
+					Iv: 'â„1¤7 Link tidak valid â„1¤7'
 				},
 				only: {
-					group: '❄1�7 Perintah ini hanya bisa di gunakan dalam group! ❄1�7',
-					ownerG: '❄1�7 Perintah ini hanya bisa di gunakan oleh owner group! ❄1�7',
-					ownerB: '❄1�7 Perintah ini hanya bisa di gunakan oleh owner bot! ❄1�7',
-					admin: '❄1�7 Perintah ini hanya bisa di gunakan oleh admin group! ❄1�7',
-					Badmin: '❄1�7 Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❄1�7'
+					group: 'â„1¤7 Perintah ini hanya bisa di gunakan dalam group! â„1¤7',
+					ownerG: 'â„1¤7 Perintah ini hanya bisa di gunakan oleh owner group! â„1¤7',
+					ownerB: 'â„1¤7 Perintah ini hanya bisa di gunakan oleh owner bot! â„1¤7',
+					admin: 'â„1¤7 Perintah ini hanya bisa di gunakan oleh admin group! â„1¤7',
+					Badmin: 'â„1¤7 Perintah ini hanya bisa di gunakan ketika bot menjadi admin! â„1¤7'
 				}
 			}
 
@@ -242,52 +242,52 @@ conn.sendMessage(id, teks, MessageType.text)
             client.sendFileFromUrl(from, loli.result, 'loli.jpeg', 'Cintai Lolimu><', id)
            break     
            case 'ytmp3':
-const teks = text.replace(/ytmp3 /, "")
+const text = text.replace(/ytmp3 /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/yta?url=${teks}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-    let hasil = `✅Lagu Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawah🗡️\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+    let hasil = `âœ…Lagu Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
       break
 case 'igstalk:'
   const teks = text.replace(/igstalk /, "")
   axios.get(`https://alfians-api.herokuapp.com/api/stalk?username=${teks}`).then ((res) =>{
-  conn.sendMessage(id, '[WAIT] Stalking...⏄1�7', MessageType.text)
-  let hasil = `✨Biodata Instagram _${teks}_ \n\n 🧶 *Username* : _${res.data.Username}_ \n 🌀 *Nama* : _${res.data.Name}_ \n 🌟 *Jumlah Followers* : _${res.data.Jumlah_Followers}_ \n 🌠 *Jumlah_Following* : _${res.data.Jumlah_Following}_ \n ⭄1�7 *Jumlah_Post* : _${res.data.Jumlah_Post}_ `;
+  conn.sendMessage(id, '[WAIT] Stalking...â„1¤7', MessageType.text)
+  let hasil = `âœ¨Biodata Instagram _${teks}_ \n\n ðŸ§¶ *Username* : _${res.data.Username}_ \n ðŸŒ€ *Nama* : _${res.data.Name}_ \n ðŸŒŸ *Jumlah Followers* : _${res.data.Jumlah_Followers}_ \n ðŸŒ  *Jumlah_Following* : _${res.data.Jumlah_Following}_ \n â­„1¤7 *Jumlah_Post* : _${res.data.Jumlah_Post}_ `;
   conn.sendMessage(id, hasil, MessageType.text);
      break
 case 'ytmp4':
 const teks = text.replace(/ytmp4 /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-    let hasil = `✅Video Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawah🗡️\n\nJudul: ${res.data.title}\n\nUkuran video: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+    let hasil = `âœ…Video Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.title}\n\nUkuran video: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
     break
 case 'twt':
 const teks = text.replace(/twt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-    let hasil = `✅Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nKlik link dibawah🗡️\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+    let hasil = `âœ…Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nKlik link dibawahðŸ—¡ï¸\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
          break
 case 'tiktok':
 const tictoc = text.replace(/tiktok /, "")
 axios.get(`https://st4rz.herokuapp.com/api/tiktok?url=${tictoc}`).then((res) => {
-	 conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-     let titoe = `✅Berhasil!!! Silahkan klik link dibawah ini untuk mendownload hasilnya! \nKlik link dibawah🗡️\n\nJudul: ${res.data.deskripsi} \n\nDurasi: ${res.data.durasi}\n\nNama: ${res.data.nama}\n\nUrl: ${res.data.urlvideo}`;
+	 conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+     let titoe = `âœ…Berhasil!!! Silahkan klik link dibawah ini untuk mendownload hasilnya! \nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.deskripsi} \n\nDurasi: ${res.data.durasi}\n\nNama: ${res.data.nama}\n\nUrl: ${res.data.urlvideo}`;
 conn.sendMessage(id, titoe, MessageType.text);
        break
 case 'wiki':
 const teks = text.replace(/wiki /, "")
 axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-    let hasil = `📝Menurut Wikipedia:\n\n${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+    let hasil = `ðŸ“Menurut Wikipedia:\n\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
     break
 case 'sholat':
   const teks = text.replace(/sholat /, "")
   axios.get(`https://api.haipbis.xyz/jadwalsholat?daerah=${teks}`).then ((res) =>{
-  conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n⚡Imsyak : ${res.data.Imsyak}\n⚡Subuh : ${res.data.Subuh} WIB\n⚡Dzuhur : ${res.data.Dzuhur}WIB\n⚡Ashar : ${res.data.Ashar} WIB\n⚡Maghrib : ${res.data.Maghrib}\n⚡Isya : ${res.data.Isya} WIB\n⚡Tengah malam : ${res.data.Dhuha} WIB`;
+  conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\nâš¡Imsyak : ${res.data.Imsyak}\nâš¡Subuh : ${res.data.Subuh} WIB\nâš¡Dzuhur : ${res.data.Dzuhur}WIB\nâš¡Ashar : ${res.data.Ashar} WIB\nâš¡Maghrib : ${res.data.Maghrib}\nâš¡Isya : ${res.data.Isya} WIB\nâš¡Tengah malam : ${res.data.Dhuha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
             break
             case 'pict':
@@ -295,7 +295,7 @@ case 'sholat':
                case 'cewek':
                    cewePict(value)
                        .then(buffer => {
-                           client.sendMessage(id, '[❗] WAIT BOSQ🖤',MessageType.text)
+                           client.sendMessage(id, '[â—] WAIT BOSQðŸ–¤',MessageType.text)
                            client.sendMessage(id, buffer ,MessageType.image)
                        })
                        .catch(err => {
@@ -305,7 +305,7 @@ case 'sholat':
                case 'cowok':
                    cowoPict(value)
                        .then(buffer => {
-                           client.sendMessage(id, '[❗] WAIT BOSQ🖤',MessageType.text)
+                           client.sendMessage(id, '[â—] WAIT BOSQðŸ–¤',MessageType.text)
                            client.sendMessage(id, buffer ,MessageType.image)
                        })
                        .catch(err => {
@@ -320,7 +320,7 @@ case 'sholat':
        case 'animepict':
            animPict(value)
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤',MessageType.text)
+                   client.sendMessage(id, '[â—] WAIT BOSQðŸ–¤',MessageType.text)
                    client.sendMessage(id, buffer,MessageType.image)
                })
                .catch(err => {
@@ -337,13 +337,13 @@ const get = require('got')
     var meninggal = (body[0]['meninggal']);
     var dirawat = (body[0]['dirawat']);
     console.log(body[0]['name'])
-    conn.sendMessage(id,`📌DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n📍Positif ==> ${positif} \n📍Sembuh ==> ${sembuh} \n📍Meninggal ==> ${meninggal}\n📍Dirawat ==> ${dirawat}`, MessageType.text);
+    conn.sendMessage(id,`ðŸ“ŒDATA WABAH COVID-19 TERBARU DI INDONESIA\n\nðŸ“Positif ==> ${positif} \nðŸ“Sembuh ==> ${sembuh} \nðŸ“Meninggal ==> ${meninggal}\nðŸ“Dirawat ==> ${dirawat}`, MessageType.text);
            break
            case 'lirik':
 	const teks = text.split("lirik")[1]
 	axios.get(`http://scrap.terhambar.com/lirik?word=${teks}`).then ((res) => {
-	     conn.sendMessage(id, '[ WAIT ] Sedang di proses⏄1�7 silahkan tunggu sebentar', MessageType.text)
-	 	let hasil = `📍lirik lagu📍${teks} \n\n\n ${res.data.result.lirik}`
+	     conn.sendMessage(id, '[ WAIT ] Sedang di prosesâ„1¤7 silahkan tunggu sebentar', MessageType.text)
+	 	let hasil = `ðŸ“lirik laguðŸ“${teks} \n\n\n ${res.data.result.lirik}`
 	conn.sendMessage(id, hasil, MessageType.text)
 	   break
 case 'alay':
@@ -427,7 +427,7 @@ _${kata}_
            indohot(value)
                .then(data => {
                    const { judul, genre, durasi, url } = data
-                   let hasil = `Tobat GOBLOK😙* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
+                   let hasil = `Tobat GOBLOKðŸ˜™* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
                    client.sendMessage(id, hasil,MessageType.text)
                })
                .catch(err => {
@@ -454,9 +454,9 @@ _${kata}_
 					})
 					break
 					case 'nsfwloli':
-					if (!isNsfw) return reply('❄1�7 *FALSE* ❄1�7')
+					if (!isNsfw) return reply('â„1¤7 *FALSE* â„1¤7')
 					loli.getNSFWLoli(async (err, res) => {
-						if (err) return reply('❄1�7 *ERROR* ❄1�7')
+						if (err) return reply('â„1¤7 *ERROR* â„1¤7')
 						buffer = await getBuffer(res.url)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					})
@@ -483,7 +483,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Sedang di proses�7�7 silahkan tunggu sebentar', MessageType.text)
+            conn.sendMessage(id, '[ WAIT ] Sedang di proses77 silahkan tunggu sebentar', MessageType.text)
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image)
                 break

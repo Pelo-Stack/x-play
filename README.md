@@ -1,6 +1,6 @@
 ## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Pelo-Stack,, Nomor Bot saya wa.me/62895421844942
 <p align="center">
-<img src="https://raw.githubusercontent.com/Pelo-Stack/xplay/main/temp/BOT X-PLAY.jpg" width="169" height="169"/>
+<img src="https://raw.githubusercontent.com/Pelo-Stack/xplay/main/temp/BOT X-PLAY.jpg" width="1690" height="1690"/>
 </p>
 <p align="center">
 <a href="#"><img title="Whatsapp-Bot" src="https://img.shields.io/badge/Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>

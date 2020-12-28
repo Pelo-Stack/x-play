@@ -193,8 +193,8 @@ case 'blocklist':
 					teks += `Total : ${blocked.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					        }
-    }
-}
+    
+
 
 
 				case 'ocr':
@@ -214,9 +214,9 @@ case 'blocklist':
 					} else {
 						reply('Foto aja mas')
 					}
-					        }
-    }
-}
+					        
+    
+
 
 
 case 'sticker':
@@ -228,9 +228,9 @@ case 'stikers':
                let result = fs.readFileSync('temp/' + time + '.webp')
                client.sendMessage(id, result, MessageType.sticker)
            }
-                   }
-    }
-}
+                   
+    
+
 
 
 			
@@ -240,8 +240,8 @@ case 'stikers':
        client.sendMessage(id, 'Nieh nomer pacarku...Eeh maksudku nomer owner/creator, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
                    }
-    }
-}
+    
+
 
     
            case 'collab':
@@ -249,17 +249,17 @@ case 'stikers':
        client.sendMessage(id, 'Nieh nomer Collab Author aku, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
                    }
-    }
-}
+    
+
 
     
            case 'say':
   const teks = text.replace(/say /, "")
 conn.sendMessage(id, teks, MessageType.text)
                    }
-    }
+    
 
-}
+
 
 
            case 'loli':
@@ -267,7 +267,7 @@ conn.sendMessage(id, teks, MessageType.text)
             client.sendFileFromUrl(from, loli.result, 'loli.jpeg', 'Cintai Lolimu><', id)
            }
 
-}     
+
            case 'ytmp3':
 const text = text.replace(/ytmp3 /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/yta?url=${teks}`).then((res) => {
@@ -276,7 +276,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/yta?url=${teks}`).then((res) =>
     conn.sendMessage(id, hasil ,MessageType.text);
       }
 
-}
+
 case 'igstalk:'
   const teks = text.replace(/igstalk /, "")
   axios.get(`https://alfians-api.herokuapp.com/api/stalk?username=${teks}`).then ((res) =>{
@@ -285,7 +285,7 @@ case 'igstalk:'
   conn.sendMessage(id, hasil, MessageType.text);
       }
 
-}
+
 case 'ytmp4':
 const teks = text.replace(/ytmp4 /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
@@ -294,7 +294,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/ytv?url=${teks}`).then((res) =>
     conn.sendMessage(id, hasil ,MessageType.text);
     }
 
-}
+
 case 'twt':
 const teks = text.replace(/twt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
@@ -303,7 +303,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88p
     conn.sendMessage(id, hasil ,MessageType.text);
          }
 
-}
+
 case 'tiktok':
 const tictoc = text.replace(/tiktok /, "")
 axios.get(`https://st4rz.herokuapp.com/api/tiktok?url=${tictoc}`).then((res) => {
@@ -312,7 +312,7 @@ axios.get(`https://st4rz.herokuapp.com/api/tiktok?url=${tictoc}`).then((res) => 
 conn.sendMessage(id, titoe, MessageType.text);
        }
 
-}
+
 case 'wiki':
 const teks = text.replace(/wiki /, "")
 axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
@@ -321,7 +321,7 @@ axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
     }
 
-}
+
 case 'sholat':
   const teks = text.replace(/sholat /, "")
   axios.get(`https://api.haipbis.xyz/jadwalsholat?daerah=${teks}`).then ((res) =>{
@@ -330,7 +330,7 @@ case 'sholat':
   conn.sendMessage(id, hasil, MessageType.text);
             }
 
-}
+
             case 'pict':
            switch (value) {
                case 'cewek':
@@ -342,9 +342,9 @@ case 'sholat':
                        .catch(err => {
                            console.log(err)
                        }
-                   }
+                   
 
-}
+
                case 'cowok':
                    cowoPict(value)
                        .then(buffer => {
@@ -354,14 +354,14 @@ case 'sholat':
                        .catch(err => {
                            console.log(err)
                        }
-                   }
+                   
 
-}
+
                default:
                    client.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok',MessageType.text)
                    }
 
-}
+
       
          
        case 'animepict':
@@ -373,9 +373,9 @@ case 'sholat':
                .catch(err => {
                    console.log(err)
                }
-           }
+           
 
-}
+
            case 'covid':
 const get = require('got')
     const body = await get.post('https://api.kawalcorona.com/indonesia', {
@@ -389,7 +389,7 @@ const get = require('got')
     conn.sendMessage(id,`ðŸ“ŒDATA WABAH COVID-19 TERBARU DI INDONESIA\n\nðŸ“Positif ==> ${positif} \nðŸ“Sembuh ==> ${sembuh} \nðŸ“Meninggal ==> ${meninggal}\nðŸ“Dirawat ==> ${dirawat}`, MessageType.text);
            }
 
-}
+
            case 'lirik':
 	const teks = text.split("lirik")[1]
 	axios.get(`http://scrap.terhambar.com/lirik?word=${teks}`).then ((res) => {
@@ -398,7 +398,7 @@ const get = require('got')
 	conn.sendMessage(id, hasil, MessageType.text)
 	   }
 
-}
+
 case 'alay':
 	const alay = text.split("alay")[1]
 	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
@@ -406,7 +406,7 @@ case 'alay':
 		conn.sendMessage(id, hasil, MessageType.text)
 		}
 
-}
+
 		
    case 'quotes':
    {
@@ -428,8 +428,8 @@ _${kata}_
          `, MessageType.text);
          }
 
-}
-   case 'nama:'
+
+   case 'nama':
   {
     const cheerio = require('cheerio');
     const request = require('request');
@@ -456,7 +456,7 @@ _${kata}_
  MessageType.text);
        }
 
-}
+
   case 'pasangan':
     const request = require('request');
     var gh = text.split("pasangan ")[1];
@@ -483,7 +483,7 @@ _${kata}_
     `, MessageType.text);
     }
 
-}
+
     case 'indohot':
            indohot(value)
                .then(data => {
@@ -494,9 +494,9 @@ _${kata}_
                .catch(err => {
                    console.log(err)
                }
-           }
+           
 
-}
+
            case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const tts = require('./lib/tts')(args[0])
@@ -514,8 +514,8 @@ _${kata}_
 							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 							fs.unlinkSync(rano)
 						}
-					}
-					}
+					
+					
 
 }
 					case 'nsfwloli':
@@ -546,7 +546,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
                    }
 
-}
+
                    case 'nulis':
   var teks = text.replace(/nulis /, '')
     axios.get('https://bangandre.herokuapp.com/nulis?teks='+teks)
@@ -559,5 +559,5 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
             conn.sendMessage(id, buf, MessageType.image)
                 }
 
-}
-}
+
+

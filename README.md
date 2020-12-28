@@ -39,7 +39,7 @@ Siapin alat dan bahannya.
 
 | BOT X-PLAY     |                   Feature        |
 | :-----------:  | :------------------------------: |
-|       ✅       | Total Features 31
+|       ✅       | Total Features 31                |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
 |       ✅       | Covid (new)                      |

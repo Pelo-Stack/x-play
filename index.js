@@ -221,7 +221,7 @@ case 'stikers':
                client.sendMessage(id, result, MessageType.sticker)
            })
            break
-					break
+			
          case 'creator':
        case 'owner':
        client.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
@@ -254,7 +254,7 @@ case 'igstalk:'
   conn.sendMessage(id, '[WAIT] Stalking...â„1¤7', MessageType.text)
   let hasil = `âœ¨Biodata Instagram _${teks}_ \n\n ðŸ§¶ *Username* : _${res.data.Username}_ \n ðŸŒ€ *Nama* : _${res.data.Name}_ \n ðŸŒŸ *Jumlah Followers* : _${res.data.Jumlah_Followers}_ \n ðŸŒ  *Jumlah_Following* : _${res.data.Jumlah_Following}_ \n â­„1¤7 *Jumlah_Post* : _${res.data.Jumlah_Post}_ `;
   conn.sendMessage(id, hasil, MessageType.text);
-     break
+      break
 case 'ytmp4':
 const teks = text.replace(/ytmp4 /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
@@ -315,8 +315,8 @@ case 'sholat':
                default:
                    client.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok',MessageType.text)
                    break
-           }
-           break
+      
+         
        case 'animepict':
            animPict(value)
                .then(buffer => {

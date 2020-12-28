@@ -1,4 +1,4 @@
-## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Pelo-Stack,, Nomor Bot saya wa.me/62895421844942
+## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Pelo-Stack
 <p align="center">
 <img src="https://raw.githubusercontent.com/Pelo-Stack/xplay/main/temp/BOT X-PLAY.jpg" width="400" height="400"/>
 </p>
@@ -15,6 +15,10 @@
 <a href="https://github.com/Pelo-Stack/xplay/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Pelo-Stack/xplay?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="UNMAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
 </p>
+  
+### Nomor My Bot
+wa.me/62895421844942
++62895421844942
 
   ### WARNING
 MAU RE-UPLOAD SCRIPT? KASIH NAMA/LINK CHANEL SAYA.... DILARANG UBAH INFO!!!
